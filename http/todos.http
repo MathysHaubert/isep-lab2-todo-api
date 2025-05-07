@@ -1,0 +1,19 @@
+### Get them all
+GET http://localhost:4567/todos
+
+### Todo post to create new one
+POST http://localhost:4567/todos
+Content-Type: application/json
+
+{
+  "name": "New Todo 1"
+}
+
+### Todo post to create new one with due date
+POST http://localhost:4567/todos
+Content-Type: application/json
+
+{
+  "name": "New Todo 3",
+  "dueDate": "2023-10-01"
+}
