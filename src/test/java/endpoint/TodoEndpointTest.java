@@ -18,7 +18,7 @@ public class TodoEndpointTest {
         RestAssured.port = 4567;
 
         try {
-            Thread.sleep(1000); // laisser le temps à Spark de démarrer
+            Thread.sleep(1000);
         } catch (InterruptedException ignored) {}
     }
 
