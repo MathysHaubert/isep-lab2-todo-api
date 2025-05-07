@@ -6,7 +6,7 @@ POST http://localhost:4567/todos
 Content-Type: application/json
 
 {
-  "name": "New Todo 1"
+  "name": "New Todo 19"
 }
 
 ### Todo post to create new one with due date
