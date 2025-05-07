@@ -2,15 +2,16 @@ package org.isep.cleancode;
 
 import static spark.Spark.*;
 
-import org.isep.cleancode.persistence.TodoRepository;
+import org.isep.cleancode.persistence.ITodoRepository;
+import org.isep.cleancode.persistence.csvfiles.TodoCsvFilesRepository;
 import org.isep.cleancode.presentation.TodoController;
-import org.isep.cleancode.service.TodoManager;
+import org.isep.cleancode.application.TodoManager;
 
 public class Main {
 
     public static void startApp() {
 
-        TodoRepository repo = new TodoRepository();
+        ITodoRepository repo = new TodoCsvFilesRepository();
         TodoManager manager = new TodoManager(repo);
         TodoController controller = new TodoController(manager);
 

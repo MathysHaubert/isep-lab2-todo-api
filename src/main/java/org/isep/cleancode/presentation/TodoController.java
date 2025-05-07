@@ -4,7 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonSyntaxException;
 import org.isep.cleancode.Todo;
-import org.isep.cleancode.service.TodoManager;
+import org.isep.cleancode.application.TodoManager;
 import spark.Request;
 import spark.Response;
 
